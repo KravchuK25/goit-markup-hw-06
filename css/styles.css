@@ -253,8 +253,8 @@ ul{
     left: 50%;
     transform: translate(-50%, -50% );
     width: 528px;
-    height: 581px;
-    
+
+    padding: 40px;
 
     background-color:var(--two-accent-color) ;
     border-radius: 4px;
@@ -282,6 +282,124 @@ ul{
 .modal-svg{
     fill: #212121;
     
+}
+.modal-svg:hover,
+.modal-svg:focus{
+    fill: var(--accent-color);
+    
+}
+
+/* робоча частина модельного вікна */
+.form-titel{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--two-text-color);
+    margin-bottom: 12px;
+
+}
+
+.label-group{
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.fron-input:focus{
+    border-color: var(--accent-color);
+}
+.fron-label{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.fron-input{
+    width: 100%;
+    padding: 12px 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+}
+.fron-input:focus{
+
+    border-color: var(--accent-color);
+}
+.fron-svg{
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    fill: var(--two-text-color);
+}
+.fron-input:focus + .fron-svg{
+    fill: var(--accent-color);
+}
+
+.forn-group .button{
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.forn-group .button:hover,
+.forn-group .button:focus{
+    background-color: #188CE8;
+    }
+
+/* checkbox style */
+
+.policy-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.custom-checkbox{
+    width: 16px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 7px;
+    outline: 2px solid var(--two-text-color);
+    outline-offset: -2px;
+
+    border-radius: 4px;
+
+    transition:  background-color var(--transition-timing) var(--transition-function);
+}
+.checkbox:checked + .custom-checkbox{
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    outline: 0;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.checkbox-svg{
+    opacity: 0;
+
+    transform: opacity var(--transition-timing) var(--transition-function);
+}
+.checkbox:checked + .custom-checkbox .checkbox-svg{
+    opacity: 1;
+}
+.form-agreements{
+    font-weight: 400;
+    line-height: 1.7;
+}
+.form-conditions{
+    color: var(--accent-color);
+}
+.fron-input-textarea{
+    resize: none;
+    padding: 12px 16px;
+   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
 }
 
 
@@ -700,8 +818,6 @@ address .address:focus{
 /* container-right */
 
 .container-right{
-    /* display: flex;
-    flex-direction: column; */
     margin-left: auto;
 }
 .footer-input{

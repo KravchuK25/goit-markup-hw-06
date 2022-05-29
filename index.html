@@ -70,14 +70,50 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
-              <svg class="modal-svg">
+              <svg class="modal-svg" width="18px" height="18px">
                 <use href="./hero/x.svg#icon-x"></use>
               </svg>
             </button>
+            <strong class="form-titel"
+              >Оставьте свои данные, мы вам перезвоним</strong
+            >
+            <form class="forn-group">
+              <label class="label-group">
+                <span class="fron-label">Имя</span>
+                <input class="fron-input" type="text" name="text" placeholder="" autocomplete />
+                <svg class="fron-svg" width="18px" height="18px">
+                  <use href="./icon/job-6.svg#icon-person"></use>
+                </svg>
+              </label>
+              <label class="label-group">
+                <span class="fron-label">Телефон</span>
+                <input class="fron-input" type="phone" name="phone" autocomplete />
+                <svg class="fron-svg" width="18px" height="18px">
+                  <use href="./icon/job-6.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <label class="label-group">
+                <span class="fron-label">Почта</span>
+                <input class="fron-input" type="email" name="email" autocomplete />
+                <svg class="fron-svg" width="18px" height="18px">
+                  <use href="./icon/job-6.svg#icon-email"></use>
+                </svg>
+              </label>
+              <label class="label-group">
+                <span class="fron-label">Комментарий</span>
+                <textarea class="fron-input fron-input-textarea " type="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+              </label>
+              <label class="policy-group">
+                <input class="checkbox visually-hidden" type="checkbox" />
+                <span class="custom-checkbox">
+                <svg class="checkbox-svg" width="16px" height="15px">
+                  <use href="./icon/job-6.svg#icon-vector"></use>
+                </svg></span>
+                <span class="form-agreements">Соглашаюсь с рассылкой и принимаю <a class="form-conditions" href="">Условия договора</a></span>
+              </label>
+              <button class="button" type="submit">Отправить</button>
+            </form>
           </div>
-        </div>
-        <div>
-          <b>Оставьте свои данные, мы вам перезвоним</b>
         </div>
         <script>
           const refs = {
@@ -85,7 +121,6 @@
             closeModalBtn: document.querySelector('[data-modal-close]'),
             modal: document.querySelector('[data-modal]'),
           };
-
           refs.openModalBtn.addEventListener('click', toggleModal);
           refs.closeModalBtn.addEventListener('click', toggleModal);
 
@@ -442,17 +477,21 @@
             </li>
           </ul>
         </div>
-      
         <form class="container-right">
           <b class="join-footer">Подпишитесь на рассылку</b>
           <label class="container-email">
-            <input class="footer-input" type="email" name="email" placeholder="E-mail"  />
-            <button class="button" type="submit">Подписаться
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="button" type="submit">
+              Подписаться
               <svg class="svg-footer" width="24px" height="24px">
-              <use href="./icon/job-6.svg#icon-send"></use>
-            </svg>
-          </button>
-
+                <use href="./icon/job-6.svg#icon-send"></use>
+              </svg>
+            </button>
           </label>
         </form>
       </div>
