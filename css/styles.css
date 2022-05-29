@@ -200,10 +200,12 @@ ul{
     margin-left: auto;
     margin-right: auto;
 
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
-    font-family: inherit;
+    
     color: var(--two-accent-color);
     background-color: var(--accent-color);
     
@@ -631,6 +633,11 @@ address .address:focus{
     margin-bottom: 9px;
    
 }
+
+
+
+
+
  /* join */
 .footer .container{
     display: flex;
@@ -690,6 +697,52 @@ address .address:focus{
 }
 
 
+/* container-right */
+
+.container-right{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: auto;
+}
+.footer-input{
+    display: flex;
+
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    margin-right: 12px;
+    padding: 18px 15px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F303A;
+        
+}
+.footer-input:focus{
+    padding: 18px 15px;
+    color: var(--two-accent-color);
+    border-color: var(--accent-color);
+    outline: 0;
+}
+.footer-input:not(:focus){
+    color: var(--two-accent-color);
+}
+.container-email .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.svg-footer{
+    margin-left: 10px;
+}
 
 /* Portfolio*/
 
