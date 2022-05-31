@@ -284,13 +284,12 @@ ul{
     outline: 0;
 }
 
+.modal-svg{
+    fill: var(--two-text-color);         
+}
 .modal-button:hover + .modal-svg,
 .modal-button:focus + .modal-svg{
-    fill: var(--accent-color); 
-}
-
-.modal-svg{
-    fill: #212121;         
+    fill: var(--accent-color);
 }
 
 /* робоча частина модельного вікна */
@@ -367,7 +366,7 @@ ul{
     justify-content: center;
 
     margin-right: 7px;
-    outline: 2px solid var(--two-text-color);
+    border: 2px solid var(--two-text-color);
     outline-offset: -2px;
 
     border-radius: 4px;
@@ -378,12 +377,16 @@ ul{
 .checkbox:checked + .custom-checkbox{
     background-color: var(--accent-color);
     outline: 0;
+    border: var(--accent-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .checkbox:focus + .custom-checkbox{
     border-color: var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .checkbox-svg{
     opacity: 0;
