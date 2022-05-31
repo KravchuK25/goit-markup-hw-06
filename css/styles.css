@@ -284,15 +284,13 @@ ul{
     outline: 0;
 }
 
-.modal-svg{
-    fill: #212121;
-            
+.modal-button:hover + .modal-svg,
+.modal-button:focus + .modal-svg{
+    fill: var(--accent-color); 
 }
 
-.modal-svg:hover,
-.modal-svg:focus{
-    fill: var(--accent-color);
-    
+.modal-svg{
+    fill: #212121;         
 }
 
 /* робоча частина модельного вікна */
@@ -309,7 +307,7 @@ ul{
 
 .label-group{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
 }
 .fron-input:focus{
@@ -376,15 +374,16 @@ ul{
 
     transition:  background-color var(--transition-timing) var(--transition-function);
 }
-.checkbox:focus + .custom-checkbox{
-    border-color: var(--accent-color);
-}
+
 .checkbox:checked + .custom-checkbox{
     background-color: var(--accent-color);
     outline: 0;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.checkbox:focus + .custom-checkbox{
+    border-color: var(--accent-color);
 }
 .checkbox-svg{
     opacity: 0;
