@@ -284,16 +284,14 @@ ul{
 .modal-button:focus{
     border: 1px solid var(--accent-color);
     outline: 0;
+    color: var(--accent-color);
 }
 
 .modal-svg{
    
-    fill: var(--two-text-color);         
+    fill: currentColor;         
 }
-.modal-button:hover + .modal-svg,
-.modal-button:focus + .modal-svg{
-    fill: var(--accent-color);
-}
+
 
 /* робоча частина модельного вікна */
 .form-titel{
