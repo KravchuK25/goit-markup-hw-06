@@ -277,6 +277,9 @@ ul{
     height: 30px;
     border: 1px solid #AFB1B8;
     background-color: var(--two-accent-color);
+    transition: border
+    var(--transition-timing) 
+    var(--transition-function);
 
    
 }
@@ -288,8 +291,10 @@ ul{
 }
 
 .modal-svg{
-   
-    fill: currentColor;         
+    fill: currentColor;        
+    transition:
+    var(--transition-timing) 
+    var(--transition-function);
 }
 
 
