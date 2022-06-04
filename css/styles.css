@@ -20,12 +20,7 @@
     font-size: 14px;
     line-height: 1.14;
 } 
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
 
-}
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -541,13 +536,12 @@ ul{
 }
 
 .distribution-item{
-    
     position: relative;
     
 }
-.distribution-item:last-child{
+/* .distribution-item:last-child{
 margin-right: 0;
-}
+} */
 .caption{
     position: absolute;
     display: flex;
@@ -594,7 +588,7 @@ margin-right: 0;
 }
 .staff .item{
    
-    margin-right: 30px;
+    /* margin-right: 30px; */
     text-align: center;
     background-color:var(--two-accent-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
@@ -603,9 +597,9 @@ margin-right: 0;
     border-radius: 0 0 4px 4px;
 
 }
-.staff .item:last-child{
+/* .staff .item:last-child{
     margin-right: 0;
-}
+} */
 
 .team .text{
     margin-bottom: 16px;
@@ -968,7 +962,7 @@ address .address:focus{
     margin-top: -30px;
     
 }
-.job > .item{
+.job .item{
     flex-basis: calc(100% / 3 - 30px);
 
    
